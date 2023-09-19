@@ -20,7 +20,9 @@ RUN bash -c "source $NVM_DIR/nvm.sh && \
 ENV NODE_PATH=$NVM_DIR/versions/node/v$NODE_VERSION/lib/node_modules \
     PATH=$NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
-RUN mkdir -p bootstrap/cache storage storage/framework storage/framework/sessions storage/framework/views storage/framework/cache && chmod -R 777 storage/*
+RUN mkdir -p bootstrap/cache storage storage/framework storage/framework/sessions storage/framework/views storage/framework/cache && chmod -R 777 storage/framework
+
+RUN chown -R www-data:www-data storage/ 
 
 COPY composer.* /app/
 # We are running composer install BEFORE copying your application
