@@ -22,7 +22,7 @@ ENV NODE_PATH=$NVM_DIR/versions/node/v$NODE_VERSION/lib/node_modules \
 
 RUN mkdir -p bootstrap/cache storage storage/framework storage/framework/sessions storage/framework/views storage/framework/cache && chmod -R 777 storage/framework
 
-RUN chown -R www-data:www-data storage/ 
+RUN chown -R www-data:www-data storage/ && chmod -R 777 storage/* 
 
 COPY composer.* /app/
 # We are running composer install BEFORE copying your application
