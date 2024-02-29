@@ -9,18 +9,17 @@ services:
       - ./:/var/www
       - ./public:/var/www/public
     environment:
-      DATABASE_URL: postgres://postgres@database_default:5432/db
+      DATABASE_URL: mysql://root@database_default:3306/db
     links:
       - "database_default"
 
   database_default:
-    image: postgres:13.5-alpine
+    image: mysql:8.0
     environment:
-      POSTGRES_DB: "db"
-      POSTGRES_HOST_AUTH_METHOD: "trust"
-      SERVICE_MANAGER: "fsm-postgres"
+      MYSQL_DATABASE: "db"
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
     volumes:
-      - database-default:/var/lib/postgresql/data
+      - "database-default:/var/lib/mysql"
 
 volumes:
   database-default:
