@@ -1,71 +1,25 @@
-# Getting started with Guidelines
+# Getting Started with Laravel
 
-[![Deploy at Divio
-badge](https://img.shields.io/badge/deploy%20at%20divio-DFFF67)](https://control.divio.com/new?template_url=https://github.com/divio/getting-started-with-php-laravel/archive/refs/heads/main.zip)
+[![Deploy to Divio](https://img.shields.io/badge/DEPLOY-TO%20DIVIO-DFFF67?logo=docker&logoColor=white&labelColor=333333)](https://control.divio.com/app/new/?template_url=https://github.com/divio/getting-started-with-php-laravel/archive/refs/heads/main.zip)
 
+Welcome to our QuickStart template – your portal to swift application development and seamless local testing. Whether you're delving into Laravel for the first time or optimizing your workflow, our template, based on [Creating a Laravel Project](https://laravel.com/docs/10.x/installation#creating-a-laravel-project) guide, has got you covered.
 
-This is a template project to bootstrap a PHP Laravel application.
+## Cloud Setup
 
+Create a [Divio Account](https://control.divio.com/) and choose **PHP Laravel** from the template selection when creating a new application. Alternatively, click the `Deploy to Divio` button above and follow the app creation wizard. Finally, deploy your app to the `test` or `live` environment.
 
-## Quick Start with Divio Cloud
+Beware that the **admin** user is not created automatically.
+You can do so by connecting via SSH and manually run `python manage.py createsuperuser`.
 
-### Create a free Divio account
-Create a free [Divio account](https://control.divio.com/).
+For in-depth details about Divio Cloud, refer to the [Divio documentation](https://docs.divio.com/introduction/).
 
-### Deploy your app in Divio Cloud
-- Click the `Deploy at Divio` button above and provide the information requested by the app creation wizard (eg. app name and app settings)
+## Local Setup
 
-- In Divio Control Panel dashboard, Add `MySQL` database under Services section.
+Install the [Divio CLI](https://github.com/divio/divio-cli) to set up your app locally.
 
-- Under settings, add the `Release Command` for database migration:
-    - `bash /app/migrate.sh`
-(`Release Commands` are the commands executed at the start of app container).
+Alternatively, build this app locally using Docker:
 
-
-- Deploy an environment; test or live. Open the Env URL in your browser.
-
-For more details about Divio system, read [Divio documentation](https://docs.divio.com/introduction/)
-
-
-## Setup your local development environment with Divio CLI
-
-Please follow our simple guidelines for [Divio CLI installation](https://docs.divio.com/introduction/01-installation/) and [setup local development](https://docs.divio.com/introduction/laravel/laravel-03-setup-project-locally/#gsc.tab=0)
-
-
-## Setup your local development environment without Divio CLI
-
-### Install Docker
-
-This project uses Docker and docker-compose which you can install from the [offical Docker website](https://docs.docker.com/get-docker/).
-
-### Clone the repository
-
-```
-git clone https://github.com/divio/getting-started-with-php-laravel.git
-```
-
-### Build the project
-
-Let's build the docker image of the project.
-```
-cd getting-started-with-php-laravel
-docker-compose build
-```
-
-### Run the project
-
-```
-docker-compose up
-```
-
-This command will start the `web` and `db` services. You can reach the web application at [http://localhost:8000]().
-
-
-## How to develop
-
-Follow the official [Laravel docs](https://laravel.com/docs/10.x/installation#creating-a-laravel-project)
-
-
-## Contribute to the project
-
-See the [contribution guide](./CONTRIBUTING.md).
+1. Ensure [Docker](https://docs.docker.com/get-docker/) is installed and running.
+2. Run `docker compose build` to build fresh images.
+3. Run `docker compose up` to start the project.
+4. Open `http://localhost`.

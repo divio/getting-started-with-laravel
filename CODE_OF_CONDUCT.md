@@ -1,27 +1,19 @@
 # Code of Conduct
 
-In this open-source project, our aim is to foster a welcoming and inclusive environment. We expect all contributors
-and participants interact with each other with courtesy, respect and kindness.
+## Welcome to Our Open-Source Community
 
-We will not tolerate abuse or harassment of any kind.
+This collaborative project strives to create an inclusive and welcoming environment. We value all contributors' and participants' interactions that reflect courtesy, respect, and kindness.
 
-In the event of a concern about behaviour, please contact the maintainers of the project:
+We have a zero-tolerance policy for any form of abuse or harassment.
 
-* Dennis Schwertel <dennis.swchwertel@divio.com>
+If you have concerns about behaviour, please reach out to Divio at info@divio.com.
 
-Reports will be taken seriously and treated in confidence. If necessary, the maintainers will act to exclude
-individuals from participating in this and other projects.
+Reports will be treated confidentially and taken seriously. The project maintainers may take appropriate action, including exclusion from participation in this and other projects, if necessary.
 
+## Guidelines for Code Review
 
-## Code review
+Code review is a crucial but sometimes challenging process for contributors and reviewers. It involves constructive critique, and improvements are often needed before accepting contributions.
 
-Code review can be a frustrating process for both contributors and reviewers, with many opportunities for mutual
-misunderstanding.
+We expect contributors to recognize that all aspects of their submissions, including code and underlying ideas, will be carefully reviewed.
 
-We expect participants who submit contributions for review to understand and accept that all contributions to the
-project, including code and the ideas behind it, will be reviewed carefully. Often review will include critique and
-criticism, and will almost always require improvements or other changes before contributions can be accepted.
-
-We also expect reviewers to communicate sensitively and respectfully.
-
-This is in line with a shared aim for the success of the project.
+Reviewers are encouraged to provide feedback sensitively and respectfully, aligning with our shared goal for the project's success.
