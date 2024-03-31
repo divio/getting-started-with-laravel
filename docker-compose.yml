@@ -1,17 +1,15 @@
-version: "3"
-
 services:
   web:
     build: .
     ports:
-      - "8000:80"
+      - 8000:80
     volumes:
-      - ./:/var/www
-      - ./public:/var/www/public
+      - ./:/var/www/html
     environment:
       DATABASE_URL: mysql://root@database_default:3306/db
     links:
-      - "database_default"
+      - database_default
+    restart: always
 
   database_default:
     image: mysql:8.0

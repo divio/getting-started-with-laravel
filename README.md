@@ -6,7 +6,7 @@ Welcome to our QuickStart template – your portal to swift application developm
 
 ## Cloud Setup
 
-Create a [Divio Account](https://control.divio.com/) and choose **PHP Laravel** from the template selection when creating a new application. Alternatively, click the `Deploy to Divio` button above and follow the app creation wizard. Finally, deploy your app to the `test` or `live` environment.
+Create a [Divio Account](https://control.divio.com/) and choose **Laravel** from the template selection when creating a new application. Alternatively, click the `Deploy to Divio` button above and follow the app creation wizard. Finally, deploy your app to the `test` or `live` environment.
 
 Beware that the **admin** user is not created automatically.
 You can do so by connecting via SSH and manually run `python manage.py createsuperuser`.
@@ -22,4 +22,4 @@ Alternatively, build this app locally using Docker:
 1. Ensure [Docker](https://docs.docker.com/get-docker/) is installed and running.
 2. Run `docker compose build` to build fresh images.
 3. Run `docker compose up` to start the project.
-4. Open `http://localhost`.
+4. Open `http://localhost:8000`.
