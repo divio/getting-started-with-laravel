@@ -1,8 +1,8 @@
 # Getting Started with Laravel
 
-[![Deploy to Divio](https://img.shields.io/badge/DEPLOY-TO%20DIVIO-DFFF67?logo=docker&logoColor=white&labelColor=333333)](https://control.divio.com/app/new/?template_url=https://github.com/divio/getting-started-with-php-laravel/archive/refs/heads/main.zip)
+[![Deploy to Divio](https://img.shields.io/badge/DEPLOY-TO%20DIVIO-DFFF67?logo=docker&logoColor=white&labelColor=333333)](https://control.divio.com/app/new/?template_url=https://github.com/divio/getting-started-with-laravel/archive/refs/heads/main.zip)
 
-Welcome to our QuickStart template – your portal to swift application development and seamless local testing. Whether you're delving into Laravel for the first time or optimizing your workflow, our template, based on [Creating a Laravel Project](https://laravel.com/docs/10.x/installation#creating-a-laravel-project) guide, has got you covered.
+Welcome to our QuickStart template – your portal to swift application development and seamless local testing. Whether you're delving into Laravel for the first time or optimizing your workflow, our template, based on [Creating a Laravel Project](https://laravel.com/docs/master/installation#creating-a-laravel-project) guide, has got you covered.
 
 ## Cloud Setup
 
@@ -21,5 +21,7 @@ Alternatively, build this app locally using Docker:
 
 1. Ensure [Docker](https://docs.docker.com/get-docker/) is installed and running.
 2. Run `docker compose build` to build fresh images.
-3. Run `docker compose up` to start the project.
-4. Open `http://localhost:8000`.
+3. Install dependencies using `docker compose run --rm web composer install`.
+4. Run migrations through `docker compose run --rm web php artisan migrate`.
+5. Run `docker compose up` to start the project.
+6. Open `http://localhost:8000`.

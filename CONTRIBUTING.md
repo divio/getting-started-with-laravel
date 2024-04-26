@@ -6,8 +6,8 @@ Thank you for contributing! We appreciate your involvement in making this projec
 
 Proposals can be submitted through:
 
-- [Pull Requests](https://github.com/divio/getting-started-with-php-laravel/pulls)
-- [Issues](https://github.com/divio/getting-started-with-php-laravel/issues)
+- [Pull Requests](https://github.com/divio/getting-started-with-laravel/pulls)
+- [Issues](https://github.com/divio/getting-started-with-laravel/issues)
 
 ## Pull Requests and Branches
 
