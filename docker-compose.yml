@@ -13,8 +13,6 @@ services:
         volumes:
             - ./:/var/www/html
             - ./vendor:/var/www/html/vendor
-            - ./composer.json:/var/www/html/composer.json
-            - ./composer.lock:/var/www/html/composer.lock
             - ./data:/data:rw
 
     database_default:
